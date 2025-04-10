@@ -55,7 +55,6 @@ body {
 
 .hero {
     text-align: center;
-    padding: 10px 5%;
 }
 
 .hero h1 {
@@ -90,7 +89,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     /* align-items: stretch; */
-    padding: 2rem 5%;
+    padding: 1rem 4%;
     gap: 20px;
 }
 
@@ -152,7 +151,6 @@ body {
 
 #statend {
     border-radius: 38px;
-    margin-right: 50px;
     width: 260px;
     height: 350px;
     text-align: left;
@@ -177,7 +175,7 @@ body {
 }
 
 .services-section {
-    padding: 40px 80px 40px 160px;
+    padding: 40px 80px 40px 130px;
     background-color: #EADDCA;
     transition: transform 0.3s ease;
 }
