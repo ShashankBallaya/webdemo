@@ -405,8 +405,19 @@ svg:hover {
         width:100%;
         margin:10px 0px 0px 0px;
     }
+    #statend{
+        width:100%;
+        margin:10px 0px 0px 0px;
+    }
     .services-section h2 {
         font-size: 2.5rem;
-        padding: 2px;
+        padding: 12px;
+        text-align: center;
+    }
+    .services-grid{
+        padding: 15px;
+    }
+    .services-section{
+        padding:60px 8px 10px 2px;
     }
 }
