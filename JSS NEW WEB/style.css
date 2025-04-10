@@ -55,7 +55,7 @@ body {
 
 .hero {
     text-align: center;
-    padding: 20px 5%;
+    padding: 10px 5%;
 }
 
 .hero h1 {
@@ -68,7 +68,7 @@ body {
 .hero p {
     font-size: 1.2rem;
     color: #666;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .btn {
@@ -90,7 +90,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     /* align-items: stretch; */
-    padding: 1rem 5%;
+    padding: 2rem 5%;
     gap: 20px;
 }
 
@@ -114,7 +114,7 @@ body {
     transition: transform 0.3s ease;
 
     /* Add these lines for background image */
-    background-image: url('image.jpg'); /* Replace with your image path */
+    background-image: url('imageai.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -177,7 +177,7 @@ body {
 }
 
 .services-section {
-    padding: 4rem 5%;
+    padding: 40px 80px 40px 160px;
     background-color: #EADDCA;
     transition: transform 0.3s ease;
 }
@@ -256,7 +256,7 @@ svg:hover {
 
 .benefit-card {
     padding: 2rem;
-    background-color: var(--primary-color);
+    background-color:#EADDCA ;
     color: #111;
     border-radius: 38px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -275,8 +275,17 @@ svg:hover {
 .cta-section h2 {
     padding-bottom: 10px;
 }
+.cta-section h3 {
+
+    padding: 10px 0px 10px 0px;
+}
 .cta-section p{
+    padding-bottom: 5px;
+    text-align:center;
+}
+.cta-section #ctap{
     padding-bottom: 10px;
+    text-align: center;
 }
 @media (max-width: 768px) {
     .nav-links {
@@ -289,6 +298,16 @@ svg:hover {
 
     .stats-section {
         flex-direction: column;
+        padding: 30px;
+    }
+    .services-grid{
+        padding: 15px;
+    }
+    .services-section{
+        padding:60px 20px 20px 20px;
+    }
+    .services-section h2{
+        text-align: center;
     }
 }
 @media (max-width: 1200px) {
