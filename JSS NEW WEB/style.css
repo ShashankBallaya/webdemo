@@ -16,7 +16,7 @@ body {
 }
 /* NEW: Hide content until language is chosen */
 body.loading {
-    visibility: hidden;
+    
     overflow: hidden;
 }
 
