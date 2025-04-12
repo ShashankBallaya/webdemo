@@ -14,7 +14,79 @@
 body {
     background-color: #FAF7EF;
 }
+/* NEW: Hide content until language is chosen */
+body.loading {
+    visibility: hidden;
+    overflow: hidden;
+}
 
+/* NEW: Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background-color: #FAF7EF;
+    padding: 2rem;
+    border-radius: 38px;
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h2 {
+    font-size: 1.8rem;
+    color: #5C4033;
+    margin-bottom: 1.5rem;
+}
+
+.modal-content select {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #5C4033;
+    border-radius: 38px;
+    background-color: #FAF7EF;
+    color: #5C4033;
+    font-size: 1rem;
+    font-weight: 450;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal-content select:hover {
+    background-color: #D2B48C;
+}
+
+.modal-content button {
+    background-color: #5C4033;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 38px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.modal-content button:hover {
+    transform: translateY(-2px);
+}
 .navbar {
     display: flex;
     justify-content: space-between;
