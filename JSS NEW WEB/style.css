@@ -469,7 +469,7 @@ body[dir="rtl"] .stats-container {
     .nav-links {
         display: none;
     }
-    #language-select {
+    #language-switcher {
 display: none;
     }
     .hero h1 {
@@ -509,7 +509,7 @@ display: none;
 }
 
 @media (max-width: 600px) {
-     #language-select {
+     #language-switcher {
 display: none;
     }
     .modal-content {
