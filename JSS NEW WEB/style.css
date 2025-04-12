@@ -38,7 +38,7 @@ body {
 
 /* NEW: Style for language switcher */
 #language-switcher {
-    padding: 0.5rem 1rem;
+    padding: 4px;
     border-radius: 38px;
     border: 1px solid #5C4033;
     background-color: #FAF7EF;
