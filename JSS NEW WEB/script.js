@@ -30,7 +30,6 @@ const translations = {
     ctap: "Request a quote for your emerging Business"
   },
   fr: {
-    // Your existing French translations (unchanged)
     hero_title: "Renforcer la fabrication de biscuits avec des produits de haute qualité et une expertise",
     hero_desc: "Votre partenaire de confiance pour les biens d'ingénierie, les solutions de moules à biscuits et les bandes transporteuses en coton.",
     services_title: "Fabrication efficace et service intégré",
@@ -60,7 +59,6 @@ const translations = {
     ctap: "Demandez un devis pour votre entreprise émergente"
   },
   ar: {
-    // Your existing Arabic translations (unchanged)
     hero_title: "تمكين تصنيع البسكويت بمنتجات عالية الجودة والخبرة",
     hero_desc: "شريكك الموثوق للسلع الهندسية، حلول قوالب البسكويت، وأحزمة النقل القطنية.",
     services_title: "تصنيع فعال وخدمة مدمجة",
@@ -90,7 +88,6 @@ const translations = {
     ctap: "اطلب عرض أسعار لأعمالك الناشئة"
   },
   es: {
-    // Your existing Spanish translations (unchanged)
     hero_title: "Potenciando la fabricación de galletas con productos de alta calidad y experiencia",
     hero_desc: "Su socio de confianza para bienes de ingeniería, soluciones de moldes para galletas y cintas transportadoras de algodón.",
     services_title: "Fabricación eficiente y servicio integrado",
@@ -120,7 +117,6 @@ const translations = {
     ctap: "Solicite un presupuesto para su negocio emergente"
   },
   pt: {
-    // Your existing Portuguese translations (unchanged)
     hero_title: "Fortalecendo a fabricação de biscoitos com produtos de alta qualidade e expertise",
     hero_desc: "Seu parceiro confiável para bens de engenharia, soluções de moldes para biscoitos e correias transportadoras de algodão.",
     services_title: "Fabricação eficiente e serviço integrado",
@@ -150,7 +146,6 @@ const translations = {
     ctap: "Solicite um orçamento para seu negócio emergente"
   },
   sw: {
-    // Placeholder Swahili translations (replace with professional translations)
     hero_title: "Kutoa Nguvu kwa Utengenezaji wa Biskuti kwa Bidhaa za Ubora wa Juu na Utaalam",
     hero_desc: "Mshirika Wako wa Kuaminika kwa Bidhaa za Uhandisi, Suluhisho za Mold za Biskuti na Mikanda ya Usafirishaji ya Pamba.",
     services_title: "Utengenezaji wa Ufanisi na Huduma Iliyojumuishwa",
@@ -181,74 +176,18 @@ const translations = {
   }
 };
 
-// Country to language mapping (full Africa + MENA/South America from previous)
+// Country to language mapping
 const countryLanguageMap = {
-  // Africa
-  'DZ': 'ar', // Algeria -> Arabic
-  'AO': 'pt', // Angola -> Portuguese
-  'BJ': 'fr', // Benin -> French
-  'BW': 'en', // Botswana -> English
-  'BF': 'fr', // Burkina Faso -> French
-  'BI': 'fr', // Burundi -> French
-  'CV': 'pt', // Cabo Verde -> Portuguese
-  'CM': 'fr', // Cameroon -> French
-  'CF': 'fr', // Central African Republic -> French
-  'TD': 'fr', // Chad -> French
-  'KM': 'fr', // Comoros -> French
-  'CG': 'fr', // Congo (Brazzaville) -> French
-  'CI': 'fr', // Côte d'Ivoire -> French
-  'CD': 'fr', // DR Congo -> French
-  'DJ': 'fr', // Djibouti -> French
-  'EG': 'ar', // Egypt -> Arabic
-  'GQ': 'es', // Equatorial Guinea -> Spanish
-  'ER': 'en', // Eritrea -> English
-  'SZ': 'en', // Eswatini -> English
-  'ET': 'en', // Ethiopia -> English
-  'GA': 'fr', // Gabon -> French
-  'GM': 'en', // Gambia -> English
-  'GH': 'en', // Ghana -> English
-  'GN': 'fr', // Guinea -> French
-  'GW': 'pt', // Guinea-Bissau -> Portuguese
-  'KE': 'sw', // Kenya -> Swahili
-  'LS': 'en', // Lesotho -> English
-  'LR': 'en', // Liberia -> English
-  'LY': 'ar', // Libya -> Arabic
-  'MG': 'fr', // Madagascar -> French
-  'MW': 'en', // Malawi -> English
-  'ML': 'fr', // Mali -> French
-  'MR': 'ar', // Mauritania -> Arabic
-  'MU': 'en', // Mauritius -> English
-  'MA': 'ar', // Morocco -> Arabic
-  'MZ': 'pt', // Mozambique -> Portuguese
-  'NA': 'en', // Namibia -> English
-  'NE': 'fr', // Niger -> French
-  'NG': 'en', // Nigeria -> English
-  'RW': 'fr', // Rwanda -> French
-  'ST': 'pt', // São Tomé and Príncipe -> Portuguese
-  'SN': 'fr', // Senegal -> French
-  'SC': 'en', // Seychelles -> English
-  'SL': 'en', // Sierra Leone -> English
-  'SO': 'ar', // Somalia -> Arabic
-  'ZA': 'en', // South Africa -> English
-  'SS': 'en', // South Sudan -> English
-  'SD': 'ar', // Sudan -> Arabic
-  'TZ': 'sw', // Tanzania -> Swahili
-  'TG': 'fr', // Togo -> French
-  'TN': 'ar', // Tunisia -> Arabic
-  'UG': 'sw', // Uganda -> Swahili
-  'ZM': 'en', // Zambia -> English
-  'ZW': 'en', // Zimbabwe -> English
-  // MENA (from previous)
-  'SA': 'ar', // Saudi Arabia -> Arabic
-  'AE': 'ar', // UAE -> Arabic
-  'JO': 'ar', // Jordan -> Arabic
-  // South America (from previous)
-  'BR': 'pt', // Brazil -> Portuguese
-  'AR': 'es', // Argentina -> Spanish
-  'CL': 'es', // Chile -> Spanish
-  'PE': 'es', // Peru -> Spanish
-  'CO': 'es', // Colombia -> Spanish
-  'VE': 'es'  // Venezuela -> Spanish
+  'DZ': 'ar', 'AO': 'pt', 'BJ': 'fr', 'BW': 'en', 'BF': 'fr', 'BI': 'fr', 'CV': 'pt',
+  'CM': 'fr', 'CF': 'fr', 'TD': 'fr', 'KM': 'fr', 'CG': 'fr', 'CI': 'fr', 'CD': 'fr',
+  'DJ': 'fr', 'EG': 'ar', 'GQ': 'es', 'ER': 'en', 'SZ': 'en', 'ET': 'en', 'GA': 'fr',
+  'GM': 'en', 'GH': 'en', 'GN': 'fr', 'GW': 'pt', 'KE': 'sw', 'LS': 'en', 'LR': 'en',
+  'LY': 'ar', 'MG': 'fr', 'MW': 'en', 'ML': 'fr', 'MR': 'ar', 'MU': 'en', 'MA': 'ar',
+  'MZ': 'pt', 'NA': 'en', 'NE': 'fr', 'NG': 'en', 'RW': 'fr', 'ST': 'pt', 'SN': 'fr',
+  'SC': 'en', 'SL': 'en', 'SO': 'ar', 'ZA': 'en', 'SS': 'en', 'SD': 'ar', 'TZ': 'sw',
+  'TG': 'fr', 'TN': 'ar', 'UG': 'sw', 'ZM': 'en', 'ZW': 'en',
+  'SA': 'ar', 'AE': 'ar', 'JO': 'ar', 'BR': 'pt', 'AR': 'es', 'CL': 'es', 'PE': 'es',
+  'CO': 'es', 'VE': 'es'
 };
 
 // Function to update page content
@@ -293,11 +232,41 @@ function setLanguage(language) {
     });
   }
 
-  // Update language switcher
-  document.getElementById('language-switcher').value = lang;
+  // Update HTML lang attribute for accessibility
+  document.documentElement.lang = lang;
 
   // Save preference
   localStorage.setItem('preferredLanguage', lang);
+
+  // Ensure content is visible after language is set
+  document.body.classList.remove('loading');
+}
+
+// Function to show language modal
+function showLanguageModal(defaultLang) {
+  const modal = document.getElementById('language-modal');
+  const select = document.getElementById('language-select');
+  const continueBtn = document.getElementById('language-continue');
+
+  // Pre-select language
+  select.value = defaultLang || 'en';
+  modal.classList.add('active');
+  document.body.classList.add('loading');
+
+  // Handle continue button
+  continueBtn.addEventListener('click', () => {
+    const selectedLang = select.value;
+    setLanguage(selectedLang);
+    modal.classList.remove('active');
+  }, { once: true }); // Ensure listener is removed after click
+
+  // Optional: Close modal on outside click with default language
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      setLanguage(defaultLang || 'en');
+      modal.classList.remove('active');
+    }
+  }, { once: true });
 }
 
 // Function to detect country and set language
@@ -311,22 +280,27 @@ function detectCountryAndSetLanguage() {
 
   // Fetch country code
   fetch('https://ipapi.co/json/')
-    .then(response => response.json())
+    .then(response => {
+      console.log('ipapi.co status:', response.status); // Debug log
+      if (!response.ok) throw new Error('API failed');
+      return response.json();
+    })
     .then(data => {
-      const countryCode = data.country_code;
-      const language = countryLanguageMap[countryCode] || 'en';
-      setLanguage(language);
+      console.log('Country detected:', data.country_code); // Debug log
+      const language = countryLanguageMap[data.country_code] || 'en';
+      showLanguageModal(language);
     })
     .catch(error => {
       console.error('Error fetching country:', error);
-      setLanguage('en');
+      showLanguageModal('en');
     });
 }
 
 // Run on page load
 document.addEventListener('DOMContentLoaded', () => {
   detectCountryAndSetLanguage();
-  // Keep your existing scroll script
+
+  // Keep existing scroll script
   document.querySelectorAll('[data-delayed-scroll]').forEach(link => {
     link.addEventListener('click', function(e) {
       e.preventDefault();
