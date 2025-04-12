@@ -24,15 +24,34 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
+    flex-wrap: wrap; /* NEW: Allow wrapping for smaller screens */
 }
 
 .logo {
-   height: 35px;
+    height: 35px;
 }
 
 .nav-links {
     display: flex;
     gap: 5rem;
+}
+
+/* NEW: Style for language switcher */
+#language-switcher {
+    padding: 0.5rem 1rem;
+    border-radius: 38px;
+    border: 1px solid #5C4033;
+    background-color: #FAF7EF;
+    color: #5C4033;
+    font-size: 16px;
+    font-weight: 450;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#language-switcher:hover {
+    background-color: #D2B48C;
+    transform: translateY(-2px);
 }
 
 .nav-links a {
@@ -62,12 +81,14 @@ body {
     max-width: 900px;
     margin: 0 auto 1.5rem;
     line-height: 1.2;
+    word-wrap: break-word; /* NEW: Prevent overflow for longer translations */
 }
 
 .hero p {
     font-size: 1.2rem;
     color: #666;
     margin-bottom: 1.5rem;
+    word-wrap: break-word; /* NEW: Prevent overflow */
 }
 
 .btn {
@@ -88,7 +109,6 @@ body {
 .stats-section {
     display: flex;
     justify-content: space-evenly;
-    /* align-items: stretch; */
     padding: 1rem 4%;
     gap: 20px;
 }
@@ -111,13 +131,11 @@ body {
     justify-content: center;
     color: #fff;
     transition: transform 0.3s ease;
-
-    /* Add these lines for background image */
-    background-image: url('imageai.jpg'); /* Replace with your image path */
+    background-image: url('imageai.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: transparent; /* Optional, if you don't want a fallback color */
+    background-color: transparent;
 }
 
 #stat1 {
@@ -134,7 +152,8 @@ body {
     color: #fff;
     transition: transform 0.3s ease;
 }
-#statc{
+
+#statc {
     padding: 2px;
     border-radius: 38px;
     width: 196px;
@@ -179,21 +198,28 @@ body {
     background-color: #EADDCA;
     transition: transform 0.3s ease;
 }
+
 .services-section h2 {
     font-size: 2.5rem;
-    color:#5C4033;
+    color: #5C4033;
     padding: 20px 400px 20px 400px;
+    word-wrap: break-word; /* NEW: Prevent overflow */
 }
+
 .service-card h3 {
     font-size: 26px;
     font-weight: 550;
-    color:#5C4033;
+    color: #5C4033;
     padding-bottom: 30px;
+    word-wrap: break-word; /* NEW: Prevent overflow */
 }
+
 .service-card p {
     font-size: 18px;
     font-weight: 600;
+    word-wrap: break-word; /* NEW: Prevent overflow */
 }
+
 .services-section h2 {
     text-align: center;
     margin-bottom: 3rem;
@@ -205,21 +231,24 @@ body {
     gap: 3rem;
 }
 
-.serv-content{
+.serv-content {
     padding-top: 60px;
 }
 
-.serv-icons{
+.serv-icons {
     display: flex;
     justify-content: space-between;
     transition: transform 0.3s ease;
 }
-svg{
+
+svg {
     transition: transform 0.3s ease;
 }
+
 svg:hover {
     transform: translateY(-5px);
 }
+
 .service-card {
     background: #D2B48C;
     height: 300px;
@@ -229,6 +258,7 @@ svg:hover {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
 }
+
 .service-card:hover {
     transform: translateY(-5px);
 }
@@ -238,12 +268,12 @@ svg:hover {
     background-color: #FAF7EF;
 }
 
-
 .benefits-section h2 {
     text-align: center;
     font-size: 2.5rem;
-    color:black;
+    color: black;
     margin-bottom: 3rem;
+    word-wrap: break-word; /* NEW: Prevent overflow */
 }
 
 .benefits-grid {
@@ -254,14 +284,22 @@ svg:hover {
 
 .benefit-card {
     padding: 2rem;
-    background-color:#EADDCA ;
+    background-color: #EADDCA;
     color: #111;
     border-radius: 38px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
 }
-.benefit-card:hover {
 
+.benefit-card h3 {
+    word-wrap: break-word; /* NEW: Prevent overflow */
+}
+
+.benefit-card p {
+    word-wrap: break-word; /* NEW: Prevent overflow */
+}
+
+.benefit-card:hover {
     transform: translateY(-5px);
 }
 
@@ -270,21 +308,91 @@ svg:hover {
     padding: 3rem 5%;
     background-color: var(--accent-color);
 }
+
 .cta-section h2 {
     padding-bottom: 10px;
+    word-wrap: break-word; /* NEW: Prevent overflow */
 }
-.cta-section h3 {
 
+.cta-section h3 {
     padding: 10px 0px 10px 0px;
+    word-wrap: break-word; /* NEW: Prevent overflow */
 }
-.cta-section p{
+
+.cta-section p {
     padding-bottom: 5px;
-    text-align:center;
+    text-align: center;
+    word-wrap: break-word; /* NEW: Prevent overflow */
 }
-.cta-section #ctap{
+
+.cta-section #ctap {
     padding-bottom: 10px;
     text-align: center;
 }
+
+/* NEW: RTL support for Arabic */
+body[dir="rtl"] .navbar {
+    flex-direction: row-reverse;
+}
+
+body[dir="rtl"] .nav-links {
+    flex-direction: row-reverse;
+}
+
+body[dir="rtl"] .hero,
+body[dir="rtl"] .services-section,
+body[dir="rtl"] .benefits-section,
+body[dir="rtl"] .cta-section {
+    text-align: right;
+}
+
+body[dir="rtl"] .services-grid,
+body[dir="rtl"] .benefits-grid {
+    direction: rtl;
+}
+
+body[dir="rtl"] .serv-icons {
+    flex-direction: row-reverse;
+}
+
+body[dir="rtl"] .service-card,
+body[dir="rtl"] .benefit-card {
+    text-align: right;
+}
+
+body[dir="rtl"] .stats-container {
+    direction: rtl;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .stats-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #statc {
+        padding: 2px;
+        border-radius: 38px;
+        height: 188px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #fff;
+        color: #111;
+        transition: transform 0.3s ease;
+    }
+
+    /* NEW: Adjust language switcher */
+    #language-switcher {
+        margin-top: 0.5rem; /* Space if wrapped */
+    }
+}
+
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -298,58 +406,43 @@ svg:hover {
         flex-direction: column;
         padding: 30px;
     }
-    .services-grid{
+
+    .services-grid {
         padding: 15px;
     }
-    .services-section{
-        padding:60px 20px 20px 20px;
-    }
-    .services-section h2{
-        text-align: center;
-    }
-}
-@media (max-width: 1200px) {
 
-    .stats-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .services-section {
+        padding: 60px 20px 20px 20px;
     }
-    .stats-container {
-        /* grid-template-columns: repeat(2, 1fr); */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        
-    }
-    #statc{
-        padding: 2px;
-        border-radius: 38px;
-        
-        height: 188px;
+
+    .services-section h2 {
         text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-color: #fff;
-        color: #111;
-        transition: transform 0.3s ease;
+    }
+
+    /* NEW: Ensure switcher fits */
+    #language-switcher {
+        width: 100%;
+        max-width: 200px;
+        margin: 0.5rem auto;
+    }
+
+    /* NEW: RTL adjustments for smaller screens */
+    body[dir="rtl"] .services-section h2,
+    body[dir="rtl"] .benefits-section h2,
+    body[dir="rtl"] .cta-section h2 {
+        text-align: right;
     }
 }
 
 @media (max-width: 600px) {
-    
     .stats-container {
-        /* grid-template-columns: repeat(2, 1fr); */
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 100%;
-        
     }
+
     #stat1 {
         padding: 2px;
         border-radius: 38px;
@@ -364,7 +457,8 @@ svg:hover {
         color: #fff;
         transition: transform 0.3s ease;
     }
-    #statc{
+
+    #statc {
         padding: 2px;
         width: 100%;
         border-radius: 38px;
@@ -378,46 +472,34 @@ svg:hover {
         color: #111;
         transition: transform 0.3s ease;
     }
-    /* .stat-card {
-        border-radius: 38px;
-        width: 100%;
-        height: 450px;
-        margin-left: 50px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-color: #D2B48C;
-        color: #fff;
-        transition: transform 0.3s ease;
-    } */
-    /* .stat-card img {
-        width: 100%;
-        height: 450px;
-    } */
 
-    #statstart{
+    #statstart {
         width: 100%;
-        margin:0px;
+        margin: 0px;
     }
 
-    #statend{
-        width:100%;
-        margin:10px 0px 0px 0px;
+    #statend {
+        width: 100%;
+        margin: 10px 0px 0px 0px;
     }
-    #statend{
-        width:100%;
-        margin:10px 0px 0px 0px;
-    }
+
     .services-section h2 {
         font-size: 2.5rem;
         padding: 12px;
         text-align: center;
     }
-    .services-grid{
+
+    .services-grid {
         padding: 15px;
     }
-    .services-section{
-        padding:60px 8px 10px 2px;
+
+    .services-section {
+        padding: 60px 8px 10px 2px;
+    }
+
+    /* NEW: Language switcher for small screens */
+    #language-switcher {
+        font-size: 14px;
+        padding: 0.4rem 0.8rem;
     }
 }
