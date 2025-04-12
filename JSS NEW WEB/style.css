@@ -507,6 +507,25 @@ body[dir="rtl"] .stats-container {
 }
 
 @media (max-width: 600px) {
+    .modal-content {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .modal-content h2 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .modal-content select {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .modal-content button {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.8rem;
+    }
     .stats-container {
         display: flex;
         flex-direction: column;
