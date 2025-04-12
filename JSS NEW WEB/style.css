@@ -105,6 +105,7 @@ body.loading {
 
 .nav-links {
     display: flex;
+    margin-left:80px;
     gap: 5rem;
 }
 
