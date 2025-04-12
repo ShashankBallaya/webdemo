@@ -469,7 +469,9 @@ body[dir="rtl"] .stats-container {
     .nav-links {
         display: none;
     }
-
+    #language-select {
+display: none;
+    }
     .hero h1 {
         font-size: 2rem;
     }
@@ -507,6 +509,9 @@ body[dir="rtl"] .stats-container {
 }
 
 @media (max-width: 600px) {
+     #language-select {
+display: none;
+    }
     .modal-content {
         width: 95%;
         padding: 1rem;
